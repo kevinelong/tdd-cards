@@ -3,7 +3,7 @@ V1. Create a function that can output a list of 52 cards in a deck.
 V2. Display a list of 52 card names. "Ace of Hearts" through "King of Clubs"
 V3. A card can be dealt from a deck into a hand.
 """
-from unittest import TestCase
+from unittest import TestCase, main
 from tdd_cards_module05 import Deck
 
 """ TESTS """
@@ -32,3 +32,7 @@ class TestDeck(TestCase):
         self.assertTrue(5 == len(Deck().deal_hand().cards), "Hand has five cards")
         self.assertTrue(Deck().deal_hand().names()[0] == 'King of Clubs', "First card is the 'King of Clubs'")
         self.assertTrue(Deck().deal_hand().names()[1] == 'Queen of Clubs', "Second card is the 'Queen of Clubs'")
+
+
+if __name__ == "__main__":
+    main()
