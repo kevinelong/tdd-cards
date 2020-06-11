@@ -4,7 +4,7 @@ V2. Display a list of 52 card names. "Ace of Hearts" through "King of Clubs"
 V3. A card can be dealt from a deck into a hand.
 """
 
-from tdd_cards_module import Deck
+from tdd_cards_module05 import Deck
 
 
 # LETS LEAVE THIS WORKING CODE ALONE FOR NOW
